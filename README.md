@@ -1,7 +1,7 @@
 基于 
-github.com/aliyun-sls/opentelemetry-go-provider-sls v0.12.0
-go.opentelemetry.io/otel v1.24.0
-go.opentelemetry.io/otel/trace v1.24.0
+github.com/aliyun-sls/opentelemetry-go-provider-sls
+go.opentelemetry.io/otel
+go.opentelemetry.io/otel/trace
 
 项目引入
 go get github.com/huangchunlong818/go-trace
