@@ -2,31 +2,6 @@ module github.com/huangchunlong818/go-trace
 
 go 1.20
 
-replace go.opentelemetry.io/otel v1.28.0 => go.opentelemetry.io/otel v1.24.0
-
-replace go.opentelemetry.io/otel/trace v1.28.0 => go.opentelemetry.io/otel/trace v1.24.0
-
-replace go.opentelemetry.io/otel/sdk v1.28.0 => go.opentelemetry.io/otel/sdk v1.24.0
-
-replace go.opentelemetry.io/otel/exporters/otlp/otlptrace v1.28.0 => go.opentelemetry.io/otel/exporters/otlp/otlptrace v1.21.0
-
-replace go.opentelemetry.io/otel/exporters/otlp/otlptrace/otlptracegrpc v1.28.0 => go.opentelemetry.io/otel/exporters/otlp/otlptrace/otlptracegrpc v1.21.0
-
-replace go.opentelemetry.io/otel/exporters/stdout/stdouttrace v1.28.0 => go.opentelemetry.io/otel/exporters/stdout/stdouttrace v1.21.0
-
-replace go.opentelemetry.io/otel/sdk/metric v1.28.0 => go.opentelemetry.io/otel/sdk/metric v1.24.0
-
-replace go.opentelemetry.io/otel/metric v1.28.0 => go.opentelemetry.io/otel/metric v1.24.0
-
-replace go.opentelemetry.io/otel/exporters/otlp/otlpmetric/otlpmetricgrpc v1.28.0 => go.opentelemetry.io/otel/exporters/otlp/otlpmetric/otlpmetricgrpc v0.44.0
-
-replace go.opentelemetry.io/otel/exporters/stdout/stdoutmetric v1.28.0 => go.opentelemetry.io/otel/exporters/stdout/stdoutmetric v0.44.0
-
-replace go.opentelemetry.io/proto/otlp v1.3.1 => go.opentelemetry.io/proto/otlp v1.0.0
-
-replace go.opentelemetry.io/contrib/instrumentation/host v0.53.0 => go.opentelemetry.io/contrib/instrumentation/host v0.46.1
-
-replace go.opentelemetry.io/contrib/instrumentation/runtime v0.53.0 => go.opentelemetry.io/contrib/instrumentation/runtime v0.46.1
 
 require (
 	github.com/aliyun-sls/opentelemetry-go-provider-sls v0.12.0
