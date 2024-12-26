@@ -157,6 +157,9 @@ func (tc *TracerSpan) GetCtxToGrpc(ctx context.Context) context.Context {
 	carrier := propagation.MapCarrier{}
 	tc.propagator.Inject(ctx, carrier)
 	md, _ := metadata.FromOutgoingContext(ctx)
+	if md == nil {
+		md = metadata.New(nil)
+	}
 	for key, value := range carrier {
 		md.Set(key, value)
 	}
@@ -167,6 +170,9 @@ func (tc *TracerSpan) GetCtxToGrpc(ctx context.Context) context.Context {
 func (tc *TracerSpan) GetCtxForClient(ctx context.Context) context.Context {
 	md, _ := metadata.FromIncomingContext(ctx)
 	carrier := MDAdapter{MD: md}
+	if carrier.MD == nil {
+		carrier.MD = metadata.New(nil)
+	}
 	return tc.propagator.Extract(ctx, carrier)
 }
 
